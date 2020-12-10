@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FPT Travel</title>
+    <link rel="stylesheet" href="font-awesome/css/all.min.css">
+    <link rel="stylesheet" href="JS/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="JS/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="JS/rateyo/rateyo.css">
+    <link rel="stylesheet" href="JS/rateyo/rateyo.min.css">
+    <link rel="stylesheet" href="JS/splide-2.4.18/dist/css/splide.min.css">
+    <link rel="stylesheet" href="CSS/jquery.nice-number.css">
+    <link rel="stylesheet" href="CSS/index.css">
+    <script src="JS/jquery-3.5.0.min.js"></script>
+    <script src="JS/rateyo/rateyo.min.js"></script>
+    <script src="JS/jquery.nice-number.js"></script>
+</head>
+<body>
+    <button id="topbt"><i class="fas fa-arrow-up"></i></button>
+    <header>
+        <div class="menu">
+            <input type="checkbox" name="" id="check">
+            
+            <div class="logo-menu">
+                <a href="#">
+                    <img src="IMG/logo.png" alt="">
+                </a>
+            </div>
+
+            <div class="nav-btn">
+                <div class="nav-links">
+                    <ul>
+                        <li class="nav-link" style="--i: .6s">
+                            <a href="#">Trang chủ</a>
+                        </li>
+                        <li class="nav-link" style="--i: .85s">
+                            <a href="#">Tour đặt vé<i class="fas fa-caret-down"></i></a>
+                            <div class="dropdown">
+                                <ul>
+                                    <li class="dropdown-link">
+                                        <a href="#">Miền Bắc</a>
+                                    </li>
+                                    <li class="dropdown-link">
+                                        <a href="#">Miền Trung</a>
+                                    </li>
+                                    <li class="dropdown-link">
+                                        <a href="#">Miền Nam</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-link" style="--i: 1.1s">
+                            <a href="datve.html">Đặt vé</a>
+                        </li>
+                        <li class="nav-link" style="--i: 1.35s">
+                            <a href="#scene">Top cảnh đẹp trong tuần</a>
+                        </li>
+                        <li class="nav-link" style="--i: 1.6s">
+                            <a href="#lh">Liên hệ</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="log-sign" style="--i: 1.8s">
+                    <ul>
+                        <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                        <li><a href=""><i class="fab fa-facebook-square"></i></a></li>
+                        <li><a href=""><i class="fab fa-google"></i></a></li>
+                    </ul>
+                    <a href="#" class="btn transparent">Log in</a>
+                </div>
+            </div>
+
+            <div class="hamburger-menu-container">
+                <div class="hamburger-menu">
+                    <div></div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="slogan">
+            <div class="boxcenter">
+                <div class="slogan-content">
+                    <h1 class="slogan-h1">FPT Travel</h1>
+                    <h2>Không có mảnh đất nào là <span>xa lạ</span></h2>
+                    <h2>Chỉ có những kẻ lữ hành là <span>người lạ</span></h2>
+                </div>
+                <script>
+                    $(function () {
+                            $('.slogan-h1').textyle();
+                            $('.slogan-content h2').textyle();
+                        })
+                </script>
+                <div class="slogan-link">
+                    <a href="">Đặt vé ngay</a>
+                </div>
+            </div>
+        </div>
+        <div class="slide-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="IMG/my-nguyen-_Urhnvu18yk-unsplash.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="IMG/krisztian-tabori-KJ1ida5X2hg-unsplash.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="IMG/giuliano-gabella-QQ9vWTP3eGo-unsplash (1).jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="IMG/dac-duy-dbm6qjNeFo8-unsplash.jpg" alt="">
+                </div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination slide swiper-pagination-white"></div>
+            <!-- Add Arrows -->
+            <div class="swiper-button-next swiper-button-white"></div>
+            <div class="swiper-button-prev swiper-button-white"></div>
+        </div>
+        <div class="form-tour">
+            <div class="boxcenter">
+                <form action="">
+                    <h2>Bạn muốn đi đâu?</h2>
+                    <!-- <input type="text" placeholder="Điểm đến..." class="ip"> -->
+                    <select name="" id="" class="ip">
+                        <option value="">Điểm đến ...</option>
+                        <option value="">Miền Bắc</option>
+                        <option value="">Miền Trang</option>
+                        <option value="">Miền Nam</option>
+                    </select>
+                    <input type="date" name="" id="" class="ip">
+                    <select name="" id="" class="ip">
+                        <option value="">Loại hình du lịch</option>
+                        <option value="">Du lịch tham quan</option>
+                        <option value="">Du lịch văn hóa</option>
+                        <option value="">Du lịch ấm thực</option>
+                    </select>
+                    <input type="submit" value="Check tour" class="ip ipsub">
+                </form>
+            </div>
+        </div>
+        <div class="top-review">
+            <i class="fad fa-plane-alt flane flane1"></i>
+            <i class="fad fa-plane-alt flane flane2"></i>
+            <div class="boxcenter">
+                <div class="top-review-content">
+                    <h2>Review top 10 địa điểm du lịch hè 2020 chắc chắc "không thể bỏ qua"</h2>
+                </div>
+                <div class="swiper-container swiper-container-top">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide review">
+                            <img src="IMG/dac-duy-dbm6qjNeFo8-unsplash.jpg" alt="">
+                            <div class="swiper-slide-h2">
+                                <h2>Nha Trang</h2>
+                            </div>
+                            <div class="swiper-slide-btn">
+                                <a href="">Còn 7 vé</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide review">
+                            <img src="IMG/dac-duy-dbm6qjNeFo8-unsplash.jpg" alt="">
+                            <div class="swiper-slide-h2">
+                                <h2>Nha Trang</h2>
+                            </div>
+                            <div class="swiper-slide-btn">
+                                <a href="">Còn 7 vé</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide review">
+                            <img src="IMG/dac-duy-dbm6qjNeFo8-unsplash.jpg" alt="">
+                            <div class="swiper-slide-h2">
+                                <h2>Nha Trang</h2>
+                            </div>
+                            <div class="swiper-slide-btn">
+                                <a href="">Còn 7 vé</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide review">
+                            <img src="IMG/dac-duy-dbm6qjNeFo8-unsplash.jpg" alt="">
+                            <div class="swiper-slide-h2">
+                                <h2>Nha Trang</h2>
+                            </div>
+                            <div class="swiper-slide-btn">
+                                <a href="">Còn 7 vé</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide review">
+                            <img src="IMG/dac-duy-dbm6qjNeFo8-unsplash.jpg" alt="">
+                            <div class="swiper-slide-h2">
+                                <h2>Nha Trang</h2>
+                            </div>
+                            <div class="swiper-slide-btn">
+                                <a href="">Còn 7 vé</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide review">
+                            <img src="IMG/dac-duy-dbm6qjNeFo8-unsplash.jpg" alt="">
+                            <div class="swiper-slide-h2">
+                                <h2>Nha Trang</h2>
+                            </div>
+                            <div class="swiper-slide-btn">
+                                <a href="">Còn 7 vé</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide review">
+                            <img src="IMG/dac-duy-dbm6qjNeFo8-unsplash.jpg" alt="">
+                            <div class="swiper-slide-h2">
+                                <h2>Nha Trang</h2>
+                            </div>
+                            <div class="swiper-slide-btn">
+                                <a href="">Còn 7 vé</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide review">
+                            <img src="IMG/dac-duy-dbm6qjNeFo8-unsplash.jpg" alt="">
+                            <div class="swiper-slide-h2">
+                                <h2>Nha Trang</h2>
+                            </div>
+                            <div class="swiper-slide-btn">
+                                <a href="">Còn 7 vé</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide review">
+                            <img src="IMG/dac-duy-dbm6qjNeFo8-unsplash.jpg" alt="">
+                            <div class="swiper-slide-h2">
+                                <h2>Nha Trang</h2>
+                            </div>
+                            <div class="swiper-slide-btn">
+                                <a href="">Còn 7 vé</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide review">
+                            <img src="IMG/dac-duy-dbm6qjNeFo8-unsplash.jpg" alt="">
+                            <div class="swiper-slide-h2">
+                                <h2>Nha Trang</h2>
+                            </div>
+                            <div class="swiper-slide-btn">
+                                <a href="">Còn 7 vé</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination swiper-pagination-top"></div>
+                </div>
+            </div>
+        </div>
+        <div class="form-email">
+            <div class="boxcenter">
+                <form action="">
+                    <div class="form-emai-content">
+                        <h2>Đăng kí ngay với chúng tôi</h2>
+                        <h3>Để nhận được nhiều ưu đãi hấp dẫn cùng các thông tin các địa điểm du lịch nổi tiếng</h3>
+                    </div>
+                    <input type="email" class="ip ipemail" placeholder="Hãy nhập email của bạn...">
+                    <input type="submit" value="Đăng kí" class="ip ipsub ipsubemail">
+                </form>
+            </div>
+        </div>
+        <div class="view-book">
+            <div class="boxcenter">
+                <div class="view-book-content">
+                    <h2>Book tour ngay săn vé liền tay</h2>
+                    <h3>Đăng ký và đặt vé nhanh chóng, các bạn có cơ hội
+                        nhận được những tấm vé trọn gói với mức giá khuyễn mãi
+                    </h3>
+                    <h3>Hãy cùng chúng tôi tham quan những danh lam thắng cảnh
+                        đẹp nhất chỉ tại Việt Nam
+                    </h3>
+                </div>
+                <div class="swiper-container book">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="IMG/dac-duy-dbm6qjNeFo8-unsplash.jpg" alt="">
+                            <div class="swiper-slide-bg">
+                                <a href="">Nha Trang</a>
+                                <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, quia vitae. Harum</h4>
+                                <div class="bg-ft">
+                                    <div class="star1">
+                                    </div>
+                                    <script>
+                                        $(".star1").rateYo({
+                                            rating: 3,
+                                            starWidth: '25px',
+                                            readOnly: true
+                                        });
+                                    </script>
+                                    <div class="bg-ft-p">
+                                        <p>( Còn 20 vé )</p>
+                                    </div>
+                                    <div class="bg-ft-day">
+                                        <i class="fal fa-clock"></i>
+                                        <p>5 Days</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="IMG/dac-duy-dbm6qjNeFo8-unsplash.jpg" alt="">
+                            <div class="swiper-slide-bg">
+                                <a href="">Nha Trang</a>
+                                <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, quia vitae. Harum</h4>
+                                <div class="bg-ft">
+                                    <div class="star1">
+                                    </div>
+                                    <script>
+                                        $(".star1").rateYo({
+                                            rating: 3,
+                                            starWidth: '25px',
+                                            readOnly: true
+                                        });
+                                    </script>
+                                    <div class="bg-ft-p">
+                                        <p>( Còn 20 vé )</p>
+                                    </div>
+                                    <div class="bg-ft-day">
+                                        <i class="fal fa-clock"></i>
+                                        <p>5 Days</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="IMG/dac-duy-dbm6qjNeFo8-unsplash.jpg" alt="">
+                            <div class="swiper-slide-bg">
+                                <a href="">Nha Trang</a>
+                                <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, quia vitae. Harum</h4>
+                                <div class="bg-ft">
+                                    <div class="star1">
+                                    </div>
+                                    <script>
+                                        $(".star1").rateYo({
+                                            rating: 3,
+                                            starWidth: '25px',
+                                            readOnly: true
+                                        });
+                                    </script>
+                                    <div class="bg-ft-p">
+                                        <p>( Còn 20 vé )</p>
+                                    </div>
+                                    <div class="bg-ft-day">
+                                        <i class="fal fa-clock"></i>
+                                        <p>5 Days</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="IMG/dac-duy-dbm6qjNeFo8-unsplash.jpg" alt="">
+                            <div class="swiper-slide-bg">
+                                <a href="">Nha Trang</a>
+                                <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, quia vitae. Harum</h4>
+                                <div class="bg-ft">
+                                    <div class="star1">
+                                    </div>
+                                    <script>
+                                        $(".star1").rateYo({
+                                            rating: 3,
+                                            starWidth: '25px',
+                                            readOnly: true
+                                        });
+                                    </script>
+                                    <div class="bg-ft-p">
+                                        <p>( Còn 20 vé )</p>
+                                    </div>
+                                    <div class="bg-ft-day">
+                                        <i class="fal fa-clock"></i>
+                                        <p>5 Days</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="IMG/dac-duy-dbm6qjNeFo8-unsplash.jpg" alt="">
+                            <div class="swiper-slide-bg">
+                                <a href="">Nha Trang</a>
+                                <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, quia vitae. Harum</h4>
+                                <div class="bg-ft">
+                                    <div class="star1">
+                                    </div>
+                                    <script>
+                                        $(".star1").rateYo({
+                                            rating: 3,
+                                            starWidth: '25px',
+                                            readOnly: true
+                                        });
+                                    </script>
+                                    <div class="bg-ft-p">
+                                        <p>( Còn 20 vé )</p>
+                                    </div>
+                                    <div class="bg-ft-day">
+                                        <i class="fal fa-clock"></i>
+                                        <p>5 Days</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="IMG/dac-duy-dbm6qjNeFo8-unsplash.jpg" alt="">
+                            <div class="swiper-slide-bg">
+                                <a href="">Nha Trang</a>
+                                <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, quia vitae. Harum</h4>
+                                <div class="bg-ft">
+                                    <div class="star1">
+                                    </div>
+                                    <script>
+                                        $(".star1").rateYo({
+                                            rating: 3,
+                                            starWidth: '25px',
+                                            readOnly: true
+                                        });
+                                    </script>
+                                    <div class="bg-ft-p">
+                                        <p>( Còn 20 vé )</p>
+                                    </div>
+                                    <div class="bg-ft-day">
+                                        <i class="fal fa-clock"></i>
+                                        <p>5 Days</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="IMG/dac-duy-dbm6qjNeFo8-unsplash.jpg" alt="">
+                            <div class="swiper-slide-bg">
+                                <a href="">Nha Trang</a>
+                                <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, quia vitae. Harum</h4>
+                                <div class="bg-ft">
+                                    <div class="star1">
+                                    </div>
+                                    <script>
+                                        $(".star1").rateYo({
+                                            rating: 3,
+                                            starWidth: '25px',
+                                            readOnly: true
+                                        });
+                                    </script>
+                                    <div class="bg-ft-p">
+                                        <p>( Còn 20 vé )</p>
+                                    </div>
+                                    <div class="bg-ft-day">
+                                        <i class="fal fa-clock"></i>
+                                        <p>5 Days</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination book"></div>
+                </div>
+                <div class="view-book-link">
+                    <a href="">Xem tất cả</a>
+                </div>
+            </div>
+        </div>
+        <div class="video">
+            <video src="Welcome to Vietnam_Trim.mp4" autoplay muted loop></video>
+        </div>
+        <div class="vehicle">
+            <div class="boxcenter flex">
+                <div class="vehicle-train">
+                    <div class="vehicle-box">
+                        <i class="fal fa-subway"></i>
+                        <p>Phương tiện tham quan an toàn sang trọng</p>
+                    </div>
+                </div>
+                <div class="vehicle-hotel">
+                    <div class="vehicle-box">
+                        <i class="fal fa-hotel"></i>
+                        <p>Khách sạn đạt chuẩn 5 sao phục vụ chu đóa tận tình</p>
+                    </div>
+                </div>
+                <div class="vehicle-guide">
+                    <div class="vehicle-box">
+                        <i class="fal fa-person-sign"></i>
+                        <p>Đội ngũ hướng dấn viên trẻ trung vui tính và giàu kinh nghiệm</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="comment">
+            <div class="splide">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide comment">
+                            <div class="comment-avatar">
+                                <div class="avatar">
+                                    <img src="IMG/avt.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="comment-content">
+                                <p>
+                                    "Vì cuộc đời là những chuyến đi để chạm - đi để cảm nhận - đi để trải nghiệm"
+                                </p>
+                            </div>
+                        </li>
+                        <li class="splide__slide comment">
+                            <div class="comment-avatar">
+                                <div class="avatar">
+                                    <img src="IMG/avt.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="comment-content">
+                                <p>"Vì cuộc đời là những chuyến đi để chạm - đi để cảm nhận - đi để trải nghiệm"</p>
+                            </div>
+                        </li>
+                        <li class="splide__slide comment">
+                            <div class="comment-avatar">
+                                <div class="avatar">
+                                    <img src="IMG/avt.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="comment-content">
+                                <p>"Vì cuộc đời là những chuyến đi để chạm - đi để cảm nhận - đi để trải nghiệm"</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="scene" id="scene">
+            <div class="boxcenter">
+                <div class="scene-content">
+                    <h2>Top cảnh đẹp trong tuần</h2>
+                </div>
+                <div class="swiper-container img">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="IMG/giuliano-gabella-QQ9vWTP3eGo-unsplash (1).jpg" alt="">
+                            <div class="scene-bg">
+                                <h3>Tháng 9, 2020</h3>
+                                <h2>Vịnh Hạ Long</h2>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="IMG/giuliano-gabella-QQ9vWTP3eGo-unsplash (1).jpg" alt="">
+                            <div class="scene-bg">
+                                <h3>Tháng 9, 2020</h3>
+                                <h2>Vịnh Hạ Long</h2>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="IMG/giuliano-gabella-QQ9vWTP3eGo-unsplash (1).jpg" alt="">
+                            <div class="scene-bg">
+                                <h3>Tháng 9, 2020</h3>
+                                <h2>Vịnh Hạ Long</h2>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="IMG/giuliano-gabella-QQ9vWTP3eGo-unsplash (1).jpg" alt="">
+                            <div class="scene-bg">
+                                <h3>Tháng 9, 2020</h3>
+                                <h2>Vịnh Hạ Long</h2>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="IMG/giuliano-gabella-QQ9vWTP3eGo-unsplash (1).jpg" alt="">
+                            <div class="scene-bg">
+                                <h3>Tháng 9, 2020</h3>
+                                <h2>Vịnh Hạ Long</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination sp-img"></div>
+                </div>
+            </div>
+        </div>
+        <div class="lienhe" id="lh">
+            <div class="boxcenter flex">
+                <div class="boxlh">
+                    <i class="fas fa-envelope"></i>
+                    <div class="ndlh">
+                        <p>Email</p>
+                        <span>email@gmail.com</span>
+                    </div>
+                </div>
+                <div class="boxlh">
+                    <i class="fas fa-phone"></i>
+                    <div class="ndlh">
+                        <p>SĐT</p>
+                        <span>0123456789</span>
+                    </div>
+                </div>
+                <div class="boxlh">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div class="ndlh">
+                        <p>Vị trí</p>
+                        <span>Việt Nam</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="l-footer">
+            <div class="footer-logo">
+                <img src="IMG/logo-w.png" alt="">
+            </div>
+            <p>
+
+            </p>
+        </div>
+            <ul class="r-footer">
+            <li>
+                <h2>Mạng xã hội</h2>
+                <ul class="box">
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Instagram</a></li>
+                </ul>
+            </li>
+            <li class="features">
+                <h2>Thông tin</h2>
+                <ul class="box h-box">
+                    <li><a href="#">Email</a></li>
+                    <li><a href="#">Số điện thoại</a></li>
+                    <li><a href="#">Vị trí</a></li>
+                    <li><a href="#">Vé</a></li>
+                    <li><a href="#">Chứng chỉ</a></li>
+                    <li><a href="#">Dịch vụ khách hàng</a></li>
+                </ul>
+            </li>
+            <li>
+                <h2>Hợp pháp</h2>
+                <ul class="box">
+                    <li><a href="#">Chính sách bảo mật</a></li>
+                    <li><a href="#">Điều khoản sử dụng</a></li>
+                    <li><a href="#">Hợp đồng</a></li>
+                </ul>
+            </li>
+        </ul>
+        <div class="b-footer">
+            <p>@Designed by everyone in <span>group 6</span></p>
+        </div>
+    </footer>
+    <script src="JS/swiper/swiper-bundle.js"></script>
+    <script src="JS/swiper/swiper-bundle.min.js"></script>
+    <script src="JS/splide-2.4.18/dist/js/splide.min.js"></script>
+    <script src="JS/textyle.js"></script>
+    <script src="JS/nouislider.js"></script>
+    <script src="JS/main.js"></script>
+</body>
+</html>
